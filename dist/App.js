@@ -22,11 +22,39 @@ function FocusInput() {
   );
 }
 
+function Kelvin() {
+  var kelvin = {
+    name: "Kelvin Njihia",
+    career: "React Developer",
+    quote: "Life is beautiful"
+  };
+
+  return React.createElement(
+    React.Fragment,
+    null,
+    React.createElement(
+      "h1",
+      null,
+      kelvin.name
+    ),
+    React.createElement(
+      "h3",
+      null,
+      kelvin.career
+    ),
+    React.createElement(
+      "p",
+      null,
+      kelvin.quote
+    )
+  );
+}
+
 export default function App() {
   return React.createElement(
     "div",
     { className: "grid place-content-center h-screen bg-[#151515] text-slate-300" },
-    React.createElement(FocusInput, null)
+    React.createElement(Kelvin, null)
   );
 }
 
